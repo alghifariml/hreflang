@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Hreflang URL Meta Box
  * Description: Adds meta boxes for x-default, English, and Indonesian hreflang URLs for all public post types.
- * Version: 1.0.9
+ * Version: 1.0.10
  * Author: M Luthfi Al Ghifari
  */
 
@@ -27,16 +27,6 @@ function hreflang_add_meta_boxes()
             'high'
         );
     }
-
-    // Register meta box for custom taxonomy 'car_category'
-    add_meta_box(
-        'hreflang_meta_box',
-        'Hreflang URLs',
-        'hreflang_meta_box_callback',
-        'car_category', // The taxonomy slug
-        'normal',
-        'high'
-    );
 }
 
 /**
